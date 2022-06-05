@@ -11,7 +11,7 @@ class CatBoots(QMainWindow):
         self.setWindowTitle(style.MainWindow.title)
         self.setStyleSheet(style.MainWindow.style)
 
-        self.BeatMaker = BeatMaker(style=style)
+        self.BeatMaker = BeatMaker(self, style=style)
         self.setCentralWidget(self.BeatMaker)
 
         

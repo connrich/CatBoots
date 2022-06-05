@@ -17,7 +17,14 @@ class AppStyle:
     class Font:
         title = QFont()
 
-        instrument = QFont()
+        instrument = QFont('Kanit', 20)
+    
+
+    class Label:
+        instrument = """QLabel{
+                border-radius: 3px;
+            }
+            """
     
 
     class Button:
@@ -26,7 +33,7 @@ class AppStyle:
                 border-radius: 5px;
             }
             QPushButton:hover{
-                border: 2px solid rgb(30,100,20);
+                border: 2px solid rgb(30,30,30);
                 border-radius: 5px;
             }
             QPushButton:checked{
